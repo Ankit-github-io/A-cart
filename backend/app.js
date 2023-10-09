@@ -17,7 +17,7 @@ app.use(express.json());
 
 // cors allowed for specific
 
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
 
 // Route Imports
 const productRoute = require("./routes/productRoute");
@@ -35,7 +35,7 @@ app.use("/api/v1", contactRoute);
 // Middleware for error
 app.use(errorMiddleware);
 
-// Razorpay Credential
+// RazorPay Credential
 const razorpay = new Razorpay({
   key_id: process.env.RAZORPAY_API_KEY,
   key_secret: process.env.RAZORPAY_API_SECRET,
