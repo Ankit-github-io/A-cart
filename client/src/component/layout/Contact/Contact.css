@@ -1,0 +1,131 @@
+/* Contact US page */
+.contactsPage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  background: var(--bg-light-2x);
+}
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.ContactsHeading {
+  margin: 2rem auto;
+  padding: 0px 2rem;
+  font: 500 2rem "Helvetica";
+  text-align: center;
+  width: fit-content;
+  color: var(--font-gray-1x);
+}
+.contactContent {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contactContent > p {
+  color: var(--font-gray-2x);
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  font-family: Merienda;
+}
+.contactContent > a {
+  color: var(--font-dark-1x);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-decoration: underline;
+  margin: 0.5rem 0;
+  font-family: Merienda;
+}
+.contactContent > a:hover {
+  color: var(--primary-color);
+  transition: ease-out 1s;
+}
+.contactContent .contactIcon {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contactContent .contactIcon > a {
+  margin: 0 0.5rem;
+  background: var(--bg-dark-2x);
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 50%;
+  line-height: 0.5rem;
+}
+.contactContent .contactIcon > a:hover {
+  background: var(--bg-dark-1x);
+  transform: scale(1.04);
+  transform-origin: center;
+  transition: ease-out 0.4s;
+}
+.contactForm {
+  padding: 1rem;
+  flex: 1;
+}
+.contactForm > form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.contactForm > form > input,
+textarea {
+  background-color: var(--bg-dark-2x);
+  padding: 1rem;
+  font-family: Merienda;
+  color: var(--font-gray-2x);
+  border: none;
+  outline: invert;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+.contactForm > form > button {
+  margin: 0.5rem 0;
+  color: tomato;
+  background-color: var(--bg-dark-1x);
+}
+.contactForm > form > button:hover {
+  color: tomato;
+  background-color: var(--bg-dark-1x);
+}
+/* For Model */
+.contactModel {
+  background: var(--bg-light-2x);
+  -webkit-backdrop-filter: blur(11px);
+  backdrop-filter: blur(8px);
+  border: 1px solid gray;
+}
+.modelContent h1 {
+  color: var(--success-color);
+  text-align: center;
+  margin: 1rem 0;
+}
+.modelContent > span {
+  color: var(--font-gray-2x);
+  font-size: var(--font-size-sm-3x);
+  font-family: "Merienda";
+  text-align: center;
+  margin: 1rem auto;
+}
+.modelContent > p {
+  color: var(--font-gray-1x);
+  font-size: var(--font-size-sm-2x);
+  font-family: "Merienda";
+  text-align: center;
+  margin: 1rem auto;
+}
+@media screen and (max-width: 760px) {
+  .contactContent .contactIcon {
+    justify-content: center;
+  }
+  .contactContent > p {
+    text-align: center;
+  }
+  .contactContent > a {
+    text-align: center;
+  }
+}

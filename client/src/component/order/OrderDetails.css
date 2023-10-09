@@ -1,0 +1,68 @@
+.orderDetailsPage {
+  background-color: var(--bg-light-2x);
+  padding: 5rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+
+.orderDetailsContainer,
+.orderDetailsCartItems {
+  padding: 1rem;
+}
+
+.orderDetailsContainer > h1 {
+  color: tomato;
+}
+
+.orderDetailsContainerBox,
+.orderDetailsCartItemsContainer {
+  margin: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.orderDetailsContainerBox > div {
+  display: flex;
+}
+
+.orderDetailsContainerBox > div > p {
+  font: 400 1rem "Roboto";
+  color: black;
+}
+.orderDetailsContainerBox > div > span {
+  margin: 0 1rem;
+  font: 100 0.9rem "Roboto";
+  color: #575757;
+}
+
+.orderDetailsCartItemsContainer > div {
+  display: flex;
+  font: 400 0.8rem "Roboto";
+  align-items: center;
+  background: var(--bg-light-item);
+}
+
+.orderDetailsCartItemsContainer > div > img {
+  width: 6rem;
+}
+
+.orderDetailsCartItemsContainer > div > a {
+  color: var(--font-gray-1x);
+  margin: 0 1rem;
+  width: 60%;
+  text-decoration: none;
+}
+
+.orderDetailsCartItemsContainer > div > span {
+  font: 100 0.8rem "Roboto";
+  color: var(--font-gray-2x);
+}
+@media Screen and (max-width: 700px) {
+  .orderDetailsPage {
+    display: block;
+  }
+  .orderDetailsCartItems {
+    border-top: 1px solid rgba(0, 0, 0, 0.164);
+  }
+}

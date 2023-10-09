@@ -1,0 +1,71 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-light-1x);
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+}
+.loading > div {
+  width: 10vmax;
+  height: 10vmax;
+  border-bottom: 5px solid rgb(110, 110, 110);
+  border-radius: 50%;
+  animation: loadingRotate 800ms linear infinite;
+}
+@keyframes loadingRotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+/* .custom-loader {
+  --R: 60px;
+  --g1: #766df4 96%, #0000;
+  --g2: #e4e4ed 96%, #0000;
+  width: calc(2 * var(--R));
+  height: calc(2 * var(--R));
+  border-radius: 50%;
+  display: grid;
+  -webkit-mask: linear-gradient(#000 0 0);
+  animation: s10 1s infinite linear;
+}
+
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  width: 50%;
+  background: radial-gradient(farthest-side, var(--g1))
+      calc(var(--R) + 0.866 * var(--R) - var(--R))
+      calc(var(--R) - 0.5 * var(--R) - var(--R)),
+    radial-gradient(farthest-side, var(--g1))
+      calc(var(--R) + 0.866 * var(--R) - var(--R))
+      calc(var(--R) - 0.5 * var(--R) - var(--R)),
+    radial-gradient(farthest-side, var(--g2))
+      calc(var(--R) + 0.5 * var(--R) - var(--R))
+      calc(var(--R) - 0.866 * var(--R) - var(--R)),
+    radial-gradient(farthest-side, var(--g1)) 0 calc(-1 * var(--R)),
+    radial-gradient(farthest-side, var(--g2))
+      calc(var(--R) - 0.5 * var(--R) - var(--R))
+      calc(var(--R) - 0.866 * var(--R) - var(--R)),
+    radial-gradient(farthest-side, var(--g1))
+      calc(var(--R) - 0.866 * var(--R) - var(--R))
+      calc(var(--R) - 0.5 * var(--R) - var(--R)),
+    radial-gradient(farthest-side, var(--g2)) calc(-1 * var(--R)) 0,
+    radial-gradient(farthest-side, var(--g1))
+      calc(var(--R) - 0.866 * var(--R) - var(--R))
+      calc(var(--R) + 0.5 * var(--R) - var(--R));
+  background-size: calc(2 * var(--R)) calc(2 * var(--R));
+  background-repeat: no-repeat;
+}
+
+.custom-loader::after {
+  transform: rotate(180deg);
+  transform-origin: right;
+}
+
+@keyframes s10 {
+  100% {
+    transform: rotate(-1turn);
+  }
+} */

@@ -1,0 +1,29 @@
+.productListContainer {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+}
+.productListTable div {
+  font: 300 0.8rem "Roboto";
+}
+
+.productListTable a,
+.productListTable button {
+  color: var(--font-gray-1x);
+  transition: all 0.5s;
+}
+
+.productListTable a:hover {
+  color: tomato;
+}
+
+.productListTable button:hover {
+  color: rgb(236, 30, 30);
+}
+
+.MuiDataGrid-columnHeader div {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+}

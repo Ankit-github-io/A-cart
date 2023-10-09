@@ -1,0 +1,51 @@
+.sidebarWrapper {
+  grid-area: sideBar;
+}
+.sidebar {
+  padding: var(--padding-md);
+  background: var(--bg-light-1x);
+  position: sticky;
+  top: 8rem;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sidebar > a > img:hover {
+  filter: drop-shadow(0 0 10px tomato);
+}
+.sidebar > a > img {
+  width: 10vw;
+  transition: all 0.5s;
+}
+.sidebar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.493);
+  font: 200 1rem "Roboto";
+  transition: all 0.5s;
+}
+.sidebar > a:first-child {
+  padding: 0;
+}
+
+.sidebar a:hover {
+  color: tomato;
+  transform: scale(1);
+}
+
+.sidebar a > P {
+  display: flex;
+  align-items: center;
+}
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+}
+
+@media Screen and (max-width: 768px) {
+  .sidebar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .sidebar ul {
+    min-height: unset;
+  }
+}

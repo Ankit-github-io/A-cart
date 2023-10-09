@@ -1,0 +1,317 @@
+.productDetailPage {
+  width: 100%;
+  background: var(--bg-light-2x);
+  padding: 5rem;
+}
+.ProductDetails {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  background: var(--bg-light-1x);
+}
+.ProductDetails > .carouselContainer {
+  text-align: center;
+  padding: 1rem;
+  width: 50%;
+}
+.carouselContainer > .carousel {
+  width: 50%;
+}
+.ProductDetails > div:last-child {
+  width: 50%;
+  max-height: 100vh;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.CarouselImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.carousal {
+  background-color: var(--bg-light-item);
+  border: 1px solid darkgray;
+  border-radius: 8px;
+}
+.imgIndicatorContainer {
+  display: flex;
+  overflow: auto;
+  gap: 0.5rem;
+  overflow-y: hidden;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.imgIndicator {
+  transition: all ease-out 1s !important;
+}
+.imgIndicator > img {
+  border-radius: 8px;
+  transition: all ease-out 0.5s !important;
+}
+
+.imgIndicatorActive > img {
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: all ease-in 115ms;
+  background-color: var(--bg-light-1x);
+}
+.detailsBlock-1 > h2 {
+  color: rgb(54, 54, 54, 0.897);
+  font-weight: 600;
+  font-size: var(--font-size-md-3x);
+  text-transform: capitalize;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.detailsBlock-1 > p {
+  color: rgba(54, 54, 54, 0.585);
+  font: 200 0.8rem cursive;
+}
+.detailsBlock-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  width: 70%;
+  padding: 1rem 0;
+}
+.detailsBlock-2 > span {
+  color: rgba(54, 54, 54, 0.585);
+  font: 200 0.8rem cursive;
+}
+.detailsBlock-3 {
+  width: 70%;
+}
+.detailsBlock-3 > h1 {
+  color: rgba(17, 17, 17, 0.795);
+  font: 400 1.8rem "Gothic Medium";
+  margin: 1rem 0;
+}
+.detailsBlock-3-1 {
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.detailsBlock-3-1,
+.detailsBlock-3-1-1 {
+  display: flex;
+  align-items: center;
+}
+
+.detailsBlock-3-1-1 > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 0.5rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+}
+.detailsBlock-3-1-1 > button:hover {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.detailsBlock-3-1-1 > span {
+  border: none;
+  padding: 0.5rem;
+  width: 2rem;
+  text-align: center;
+  outline: none;
+  font: 400 0.8rem "Roboto";
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.detailsBlock-3-1 > button:last-child {
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  background-color: tomato;
+  font: 500 0.8rem "Roboto";
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+}
+
+.detailsBlock-3-1 > button:last-child:hover {
+  background-color: rgb(214, 84, 61);
+}
+
+.detailsBlock-3 > p {
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  padding: 1rem 0;
+  color: rgba(0, 0, 0, 0.651);
+  font: 400 1rem "Roboto";
+  margin: 1rem 0;
+}
+
+.detailsBlock-4 {
+  color: rgba(0, 0, 0, 0.897);
+  font: 500 1rem sans-serif;
+}
+
+.detailsBlock-4 > p {
+  color: rgba(0, 0, 0, 0.534);
+  font: 300 0.8rem sans-serif;
+}
+
+.submitReview {
+  border: none;
+  background-color: tomato;
+  font: 500 0.8rem "Roboto";
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+}
+.submitReview:hover {
+  background-color: rgb(197, 68, 45);
+  transform: scale(1.1);
+}
+.reactStar {
+  color: tomato;
+  font-size: 1rem;
+}
+.reactStar > span:hover {
+  color: tomato !important;
+}
+
+.submitDialog {
+  display: flex;
+  flex-direction: column;
+}
+.submitReviewTextAria {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  background-color: white;
+  margin: 1rem 0;
+  outline: none;
+  padding: 1rem;
+  font: 300 1rem "Roboto";
+}
+
+.reviewsHeading {
+  color: #000000be;
+  font: 500 1.3rem "Roboto";
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+  padding: 1rem;
+  width: 20vmax;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.reviews {
+  display: flex;
+  overflow: auto;
+  overflow-y: hidden;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.reviewCard {
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+  border: 1px solid rgba(56, 56, 56, 0.116);
+  width: 250px;
+  place-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  text-align: center;
+  border-radius: 6px;
+}
+.reviewCard > img {
+  width: 5rem;
+  border-radius: 50%;
+}
+.reviewCard .userName {
+  color: rgba(0, 0, 0, 0.836);
+  font: 600 1rem "Roboto";
+}
+.reviewCardComment {
+  color: rgba(0, 0, 0, 0.445);
+  font: 300 0.8rem cursive;
+}
+
+.noReviews {
+  font: 400 1rem "Gill Sans";
+  text-align: center;
+  color: rgba(0, 0, 0, 0.548);
+}
+
+@media screen and (max-width: 600px) {
+  .productDetailPage {
+    width: 100%;
+    background: var(--bg-light-2x);
+    padding: 5rem 0;
+  }
+  .ProductDetails {
+    flex-direction: column;
+    height: unset;
+    background: unset;
+    padding: 1rem;
+  }
+
+  .ProductDetails > .carouselContainer {
+    width: 100%;
+  }
+  .ProductDetails > div:last-child {
+    align-items: center;
+    width: 100%;
+    max-height: unset;
+  }
+
+  .detailsBlock-1 > h2 {
+    text-align: center;
+  }
+
+  .detailsBlock-1 > p {
+    text-align: center;
+  }
+
+  .detailsBlock-2 {
+    justify-content: center;
+  }
+  .detailsBlock-2 > span {
+    font-size: 1rem;
+  }
+
+  .detailsBlock-3 > h1 {
+    font: 700 1rem "Franklin Gothic Medium";
+    text-align: center;
+  }
+
+  .detailsBlock-3-1 {
+    flex-direction: column;
+  }
+
+  .detailsBlock-3-1-1 {
+    padding: 1.5rem 0;
+  }
+  .detailsBlock-3-1-1 > button {
+    padding: 0.5rem 1rem;
+  }
+
+  .detailsBlock-3-1 > button:last-child {
+    padding: 0.5rem 1rem;
+    margin: 2rem 0;
+  }
+
+  .detailsBlock-3 > p {
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+
+  .submitReview {
+    font: 500 1rem "Roboto";
+    padding: 0.5rem 1rem;
+    margin: 2rem 0;
+  }
+}

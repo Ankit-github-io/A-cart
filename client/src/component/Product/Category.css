@@ -1,0 +1,10 @@
+.categoryUl {
+  padding: 0;
+  max-height: 25vh;
+  overflow-y: scroll;
+  margin: 1rem 0;
+}
+.categoryUl > {
+  list-style: none;
+  padding: 0;
+}

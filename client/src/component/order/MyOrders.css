@@ -1,0 +1,37 @@
+/* MyOrders.css */
+.MuiDataGrid-columnHeader {
+  background-color: var(--primary-color);
+}
+
+.MuiDataGrid-columnHeader div {
+  color: rgb(255, 255, 255);
+}
+
+.MuiDataGrid-iconSeparator {
+  display: none !important;
+}
+
+/* Container for the entire MyOrders component */
+.myOrdersContainer {
+  padding: 6rem 1.2rem 1.2rem 1.2rem;
+  background: var(--bg-light-2x);
+}
+
+.emptyOrder {
+  width: 100%;
+  background: var(--bg-light-3x);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 5rem;
+}
+.emptyOrder img {
+  width: auto;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+.emptyOrder a {
+  text-decoration: none;
+  color: var(--primary-color);
+}

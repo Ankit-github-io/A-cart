@@ -1,0 +1,17 @@
+{
+  "name": "a-cart",
+  "version": "1.0.0",
+  "description": "ACart is E-commerce Website made by ankit ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-install": "cd backend && npm install",
+    "server-start": "cd backend && npm start",
+    "server-dev": "cd backend && npm run server",
+    "client-install": "cd client && npm install",
+    "client-build": "cd client && npm run build",
+    "client": "cd client && npm start"
+  },
+  "author": "Ankit",
+  "license": "ISC"
+}

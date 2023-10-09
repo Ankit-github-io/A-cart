@@ -1,0 +1,139 @@
+.speedDial {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+.speedDial > button {
+  background-color: transparent;
+  transition: all 0.2s !important;
+  box-shadow: none;
+  width: var(--s);
+  height: var(--s);
+}
+.speedDial > button:hover {
+  background-color: transparent;
+}
+.speedDial:hover .userProfile::after {
+  background: conic-gradient(
+    from var(--from),
+    var(--color1),
+    var(--color2) 100%,
+    transparent 100%
+  );
+  transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: spin cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes spin {
+  0% {
+    background: conic-gradient(
+      from var(--from),
+      var(--color1),
+      var(--color2) var(--distance),
+      transparent var(--distance)
+    );
+  }
+  50% {
+    background: conic-gradient(
+      from var(--from),
+      var(--color1),
+      var(--color2) 0%,
+      transparent 0%
+    );
+  }
+  100% {
+    background: conic-gradient(
+      from var(--from),
+      var(--color1),
+      var(--color2) 100%,
+      transparent 100%
+    );
+  }
+}
+.menuBurger {
+  width: 56px !important;
+  height: 56px !important;
+  position: fixed;
+  top: 1.5rem !important;
+  left: 1.5rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.6rem 0.4rem !important;
+
+  overflow: hidden;
+  z-index: 1000;
+}
+.menuBurgerItem {
+  height: 4px !important;
+  width: 100% !important;
+  border-radius: 5px !important;
+  transition: all 0.4s;
+}
+.nav4 {
+  font-size: 2rem;
+}
+/* Image circle border */
+:root {
+  --border: 3px;
+  --color1: #ff6347;
+  --color2: #a071d6;
+  --from: 30deg;
+  --distance: 56%;
+  --s: 60px;
+}
+.userProfile {
+  position: relative;
+  width: var(--s);
+  height: var(--s);
+  padding: 5px;
+}
+.userProfile::after {
+  content: "";
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    from var(--from),
+    var(--color1),
+    var(--color2) var(--distance),
+    transparent var(--distance)
+  );
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--border)),
+    #fff calc(100% - var(--border) + 1px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--border)),
+    #fff calc(100% - var(--border) + 1px)
+  );
+}
+.userProfile > img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  min-height: 100%;
+  transition: all ease-out 0.4s;
+  height: auto;
+}
+
+@media screen and (max-width: 799px) {
+  .nav1 {
+    flex-direction: row !important;
+    padding: 0 !important;
+  }
+  .nav1 .logoReactNavbar {
+    width: 100% !important;
+  }
+  .nav .linksReactNavbar {
+    font-size: unset !important;
+  }
+}

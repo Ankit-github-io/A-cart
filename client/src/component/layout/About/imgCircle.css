@@ -1,0 +1,49 @@
+/* Image circle border */
+:root {
+  --border: 3px;
+  --color1: #ff6347;
+  --color2: #a071d6;
+  --from: 30deg;
+  --distance: 56%;
+  --size: 150px;
+}
+.img-wrap {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  padding: 10px;
+}
+.img-wrap::after {
+  content: "";
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    from var(--from),
+    var(--color1),
+    var(--color2) var(--distance),
+    transparent var(--distance)
+  );
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--border)),
+    #fff calc(100% - var(--border) + 1px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--border)),
+    #fff calc(100% - var(--border) + 1px)
+  );
+}
+.img-wrap > img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  min-height: 100%;
+  transition: all ease-out 0.4s;
+  height: auto;
+}
