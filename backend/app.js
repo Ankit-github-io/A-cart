@@ -17,7 +17,7 @@ app.use(express.json());
 
 // cors allowed for specific
 
-app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
+app.use(cors({ origin: "https://shopacart.onrender.com", credentials: true }));
 
 // Route Imports
 const productRoute = require("./routes/productRoute");
